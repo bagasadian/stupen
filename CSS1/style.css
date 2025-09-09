@@ -33,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    background: linear-gradient(135deg, #4b0082, #8e2de2); /* ungu tua ke violet */
+    background: linear-gradient(135deg, #4b0082, #8e2de2);
     padding: 14px 25px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     border-radius: 0 0 12px 12px;
@@ -60,13 +60,13 @@ body {
     height: 3px;
     bottom: -4px;
     left: 0;
-    background-color: #ffdf6c; /* emas lembut */
+    background-color: #ffdf6c; 
     transition: width 0.3s ease;
     border-radius: 2px;
 }
 
 .menu a:hover {
-    color: #ffdf6c; /* emas */
+    color: #ffdf6c;
 }
 
 .menu a:hover::after {
@@ -76,7 +76,7 @@ body {
 /* Heading */
 h1, h2 {
     margin: 20px 0 15px;
-    color: #6a0dad; /* ungu elegan */
+    color: #6a0dad; 
     text-align: center;
     font-weight: bold;
 }
@@ -105,7 +105,7 @@ table th, table td {
 }
 
 table th {
-    background: #6a0dad; /* ungu elegan */
+    background: #6a0dad; 
     color: white;
 }
 
@@ -162,7 +162,7 @@ fieldset ul li a {
     text-decoration: none;
     padding: 10px;
     border-radius: 8px;
-    background: #f9f5ff; /* ungu muda lembut */
+    background: #f9f5ff; 
     color: #333;
     font-weight: 500;
     text-align: center;
