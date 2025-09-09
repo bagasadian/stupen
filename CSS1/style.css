@@ -6,15 +6,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*Body*/
+/* Body */
 body {
-    background: #f7f9fc;
+    background: #f7f7fb;
     color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
-/*Header*/
+/* Header */
 .header {
     margin: 0;
     padding: 0;
@@ -27,41 +27,67 @@ body {
     border-radius: 0;
 }
 
-/*Menu*/
+/* Navbar Elegan */
 .menu {
-    text-align: center;
-    background: #ffffff;
-    padding: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(135deg, #4b0082, #8e2de2); /* ungu tua ke violet */
+    padding: 14px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 0 0 12px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .menu a {
-    margin: 0 15px;text-decoration: none;
-    color: #3a7bd5;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.2s;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 10px;
+    transition: color 0.3s ease;
+}
+
+/* Efek underline animasi */
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffdf6c; /* emas lembut */
+    transition: width 0.3s ease;
+    border-radius: 2px;
 }
 
 .menu a:hover {
-    color: #0056b3;
-    transform: scale(1.1);
+    color: #ffdf6c; /* emas */
 }
 
-/*Heading*/
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* Heading */
 h1, h2 {
     margin: 20px 0 15px;
-    color: #3a7bd5;
+    color: #6a0dad; /* ungu elegan */
     text-align: center;
     font-weight: bold;
 }
 
-/*Paragraf dan List*/
+/* Paragraf dan List */
 p, li {
     margin-bottom: 12px;
     font-size: 15px;
 }
 
-/*Tabel*/
+/* Tabel */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -79,7 +105,7 @@ table th, table td {
 }
 
 table th {
-    background: #3a7bd5;
+    background: #6a0dad; /* ungu elegan */
     color: white;
 }
 
@@ -100,7 +126,6 @@ table th {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(0,0,0,0.2);
@@ -108,7 +133,7 @@ table th {
 
 /* Fieldset */
 fieldset {
-    border: 2px solid #3a7bd5;
+    border: 2px solid #6a0dad;
     border-radius: 10px;
     padding: 15px;
     background: #ffffff;
@@ -117,7 +142,7 @@ fieldset {
 
 fieldset legend {
     font-weight: bold;
-    color: #3a7bd5;
+    color: #6a0dad;
     padding: 0 8px;
     font-size: 18px;
 }
@@ -137,7 +162,7 @@ fieldset ul li a {
     text-decoration: none;
     padding: 10px;
     border-radius: 8px;
-    background: #f5f9ff;
+    background: #f9f5ff; /* ungu muda lembut */
     color: #333;
     font-weight: 500;
     text-align: center;
@@ -146,7 +171,7 @@ fieldset ul li a {
 }
 
 fieldset ul li a:hover {
-    background: #3a7bd5;
+    background: #6a0dad;
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -160,7 +185,7 @@ fieldset ul li a:hover {
 
 .profile img {
     border-radius: 50%;
-    border: 4px solid #3a7bd5;
+    border: 4px solid #6a0dad;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-bottom: 10px;
 }
@@ -168,7 +193,7 @@ fieldset ul li a:hover {
 /* Footer */
 .footer {
     text-align: center;
-    background: #3a7bd5;
+    background: #6a0dad;
     color: white;
     padding: 12px;
     font-size: 14px;
