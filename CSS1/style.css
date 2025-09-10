@@ -27,7 +27,7 @@ body {
     border-radius: 0;
 }
 
-/* Navbar Elegan */
+/* Navbar */
 .menu {
     display: flex;
     justify-content: center;
@@ -52,7 +52,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Efek underline animasi */
 .menu a::after {
     content: "";
     position: absolute;
